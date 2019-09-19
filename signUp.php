@@ -83,7 +83,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Redirect to login page
-                header("location: login.php");
+                header("location: index.php");
             } else{
                 echo "Something went wrong. Please try again later.";
             }
@@ -113,7 +113,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 
 <body>
-
+<div class="bg">
     <body>
 
         <div class="wrapper">
@@ -126,7 +126,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <div class="fields">
                   <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                    <input type="text" name="username" placeholder="Username" id="Password" class="form-control" value="<?php echo $username; ?>">
+                    <input type="text" name="username" placeholder="Username or email" id="Password" class="form-control" value="<?php echo $username; ?>">
                  <span class="help-block"><?php echo $username_err; ?></span>
              </div>
 
@@ -149,6 +149,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 </div>
 
             </div>
+        </div>
         </div>
     </body>
 </body>
