@@ -1,0 +1,82 @@
+/* Style the navigation bar */
+.navbars {
+    width: 100%;
+    background-image: url(cool-backgrounds-feat-1-620x350.jpg);
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+  }
+
+  /* Navbar links */
+  .navbars a {
+    float: left;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    position: absolute;
+    right: 70px;
+
+  }
+
+.header a {
+
+  float: left;
+  text-align: center;
+  padding: 18px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+
+
+}
+.logout a {
+
+  float: left;
+  text-align: center;
+  padding: 18px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  position: absolute;
+  right: 1350px;
+
+
+}
+
+
+
+
+
+
+  /* Navbar links on mouse-over */
+
+
+  /* Current/active navbar link */
+  .active {
+    background-color: #4CAF50;
+  }
+
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+ .wording{
+     height: 100%;
+     width: 100%;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 100;
+     text-align: center;
+     position: relative;
+     top: 200px;
+     font-size: 40px;
+ }
